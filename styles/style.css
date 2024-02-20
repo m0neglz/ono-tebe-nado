@@ -50,20 +50,27 @@
 
 .cover {
   color: white;
+  position: relative;
   background: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 128% 103%;
+
 }
 
 .overlay {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  z-index: 0;
   background:rgba(0, 0, 0, .6);
+  height: 100%;
+  width: 100%;
+
+
 }
 
 .cover__title {
+  position: relative;
+  z-index: 1;  
   display: inline-block;
   padding: 165px 50px 135px;
   color: white;
@@ -72,6 +79,7 @@
   line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
+
 }
 
 .aligned-text {
@@ -106,12 +114,14 @@
 }
 
 .cover__description {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 77px;
   padding: 0 50px 51px 82px;
+  z-index: 1;
 }
 
 .cover__description-text {
@@ -125,6 +135,7 @@
 }
 
 .bet-button {
+  position: relative;
   border: 1px solid white;
   padding: 12px 32px;
   color: white;
@@ -167,31 +178,27 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 334px;
   height: 100%;
   color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
 }
 
 .card div {
@@ -202,6 +209,8 @@
 }
 
 .card__title {
+  position: relative;
+  z-index: 1;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -210,6 +219,8 @@
 }
 
 .card__text {
+  position: relative;
+  z-index: 1;
   display: block;
   font-weight: 400;
   font-size: 20px;
