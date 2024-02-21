@@ -62,10 +62,7 @@
   position: absolute;
   z-index: 0;
   background:rgba(0, 0, 0, .6);
-  height: 100%;
-  width: 100%;
-
-
+  inset: 0;
 }
 
 .cover__title {
@@ -137,7 +134,7 @@
 .bet-button {
   position: relative;
   border: 1px solid white;
-  padding: 12px 32px;
+  padding: 12px 32px 11px 31px;
   color: white;
   font-weight: 400;
   font-size: 22px;
@@ -168,25 +165,31 @@
 }
 
 .lots__card-list-item {
-  height: 563px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  list-style: none;
 }
 
 .card-link {
   display: block;
   height: 100%;
-  text-decoration: none;
 }
 
 .card {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
   width: 334px;
   height: 100%;
   color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  padding: 48px 40px;
 }
 
 .card_type_film {
@@ -199,13 +202,6 @@
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-}
-
-.card div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 48px 40px;
 }
 
 .card__title {
